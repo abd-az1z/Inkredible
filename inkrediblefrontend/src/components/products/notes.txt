@@ -1,0 +1,3 @@
+This folder is for: 
+# Product listing and card components
+Contains components for displaying product cards, product grids, and product details.

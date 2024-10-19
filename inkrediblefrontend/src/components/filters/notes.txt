@@ -1,0 +1,3 @@
+This folder is for: 
+# Filter components
+Contains components for filtering by size, price, color, and discounts.

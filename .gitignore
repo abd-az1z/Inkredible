@@ -1,0 +1,14 @@
+# Node.js modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.pid.lock
+
+# dotenv environment variables
+.env

@@ -1,0 +1,2 @@
+This folder is for:
+This folder will hold all the main pages of your app, including the homepage, product pages for different categories, the cart, and the checkout page.

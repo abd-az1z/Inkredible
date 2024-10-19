@@ -1,0 +1,3 @@
+ This folder is for: 
+ # Context API or Redux for state management
+ If using Context API or Redux for state management (for cart, filters, and authentication), this folder will contain the necessary code.
