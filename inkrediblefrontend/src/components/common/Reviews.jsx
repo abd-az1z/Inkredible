@@ -10,7 +10,8 @@ const Reviews = () => {
       text: "This sweater is very comfortable and flattering. It's warm, but also not overheating. I love that it is wool, but also not at all itchy.",
       reviewer: "ostar",
       product: "The Half-Zip Sweater in Luxe Merino",
-      image: "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
+      image:
+        "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ const Reviews = () => {
       text: "The material is incredibly soft and high quality. Fits perfectly! I get compliments every time I wear it.",
       reviewer: "jane",
       product: "Merino Wool Turtleneck",
-      image: "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
+      image:
+        "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
     },
     {
       id: 3,
@@ -26,7 +28,8 @@ const Reviews = () => {
       text: "Absolutely love this sweater! Great for cold weather and layering. It's a wardrobe staple for me now.",
       reviewer: "john",
       product: "Chunky Knit Sweater",
-      image: "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
+      image:
+        "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
     },
   ];
 
@@ -47,11 +50,11 @@ const Reviews = () => {
     );
   };
 
-  const { rating, text, reviewer, product, image } = reviews[currentReviewIndex];
+  const { rating, text, reviewer, product, image } =
+    reviews[currentReviewIndex];
 
   return (
-    <div className="flex justify-between items-center container p-4 md:px-6">
-      {/* Left Arrow for Navigation */}
+    <div className="w-full flex justify-between items-center p-4 md:px-6">
       <button
         className="text-gray-300 hover:text-black"
         onClick={handlePrevious}
@@ -72,16 +75,12 @@ const Reviews = () => {
           <p className="italic text-lg mb-4">"{text}"</p>
           <p className="text-gray-600">
             ~ {reviewer},{" "}
-            <a
-              href="/"
-              className="text-blue-500 underline hover:text-blue-700"
-            >
+            <a href="/" className="text-blue-500 underline hover:text-blue-700">
               {product}
             </a>
           </p>
         </div>
 
-        {/* Image beside the review, now visible on all screen sizes */}
         <div className="w-full md:w-1/2 p-4">
           <img
             src={image}
@@ -91,7 +90,6 @@ const Reviews = () => {
         </div>
       </div>
 
-      {/* Right Arrow for Navigation */}
       <button className="text-gray-300 hover:text-black" onClick={handleNext}>
         <FaChevronRight size={18} />
       </button>

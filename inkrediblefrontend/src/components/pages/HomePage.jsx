@@ -1,7 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ProductList from "../products/ProductList";
-import Reviews from "../common/Reviews";
+import Navbar from "../common/Navbar";
+// import ProductList from "../products/ShopBestsellersList";
+// import Reviews from "../common/Reviews";
+// import ShopBestsellersList from "../products/ShopBestsellersList";
+// import ShopForKidsList from "../products/ShopForKidsList";
+// import ShopForMenList from "../products/ShopForMenList";
+// import ShopForWomenList from "../products/ShopForWomenList";
+// import Tagline from "../common/Tagline";
+// import Footer from "../common/Footer";
+import ProductPage from "./ProductPage"
+import CheckoutPage from "./CheckoutPage";
 
 const HomePage = () => {
   // Variants for motion animation
@@ -20,6 +29,7 @@ const HomePage = () => {
 
   return (
     <div className="w-full h-screen p-4 md:px-6">
+      <Navbar />
       <div className="w-full">
         <div
           className="w-full relative h-screen bg-cover bg-top"
@@ -57,6 +67,18 @@ const HomePage = () => {
             </motion.p>
           </div>
         </div>
+      </div>
+      <ProductPage />
+      <CheckoutPage />
+      <div className="mt-10">
+        {/* <Tagline />
+        <ShopBestsellersList />
+        <ShopForKidsList />
+        <ShopForMenList />
+        <ShopForWomenList />
+        <Tagline />
+        <Reviews />
+        <Footer /> */}
       </div>
     </div>
   );

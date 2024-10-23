@@ -1,2 +1,5 @@
 This folder is for:
 This folder will hold all the main pages of your app, including the homepage, product pages for different categories, the cart, and the checkout page.
+
+# HomePage.jsx
+This HomePage component in React renders a full-screen homepage with an animated content overlay using framer-motion for smooth transitions. The background image is set with CSS, and the content box at the bottom includes a title, tagline, and description text, which are animated to fade in and slide upwards with staggered timing. The layout is responsive, ensuring that elements adjust for different screen sizes, and the animation creates a smooth and engaging user experience for showcasing the brand and its messaging.

@@ -1,3 +1,8 @@
 This folder is for: 
-# Filter components
-Contains components for filtering by size, price, color, and discounts.
+# Filter.jsx
+This code defines a FilterBar component in React, which provides a set of filtering options for products, including categories, sizes, price range, customer ratings, fit types, and sleeve lengths. The component uses useInsertionEffect to insert custom CSS styles when the component is mounted.
+Key features:
+> Filter Handlers: Functions like handleCategoryChange, handleSizeChange, etc., update the filter state when a user interacts with the filters.
+> Reset Filters: A reset button resets all filters to their default values.
+> Sticky Bar: The filter bar is sticky (position: sticky) to remain at the top of the page as the user scrolls.
+This component helps filter a product list dynamically by passing the selected filters to a parent component via onFilterChange.

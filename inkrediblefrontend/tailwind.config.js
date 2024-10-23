@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       scrollBehavior: ['smooth'],
-      fontFamily:{
-        Font1:['font1', 'sans-serif'],
-      }
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
 

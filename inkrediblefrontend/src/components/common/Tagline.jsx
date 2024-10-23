@@ -12,27 +12,26 @@ const Tagline = () => {
   const [currentTaglineIndex, setCurrentTaglineIndex] = useState(0);
 
   useEffect(() => {
-    // Change the tagline every 3 seconds
     const interval = setInterval(() => {
       setCurrentTaglineIndex((prevIndex) =>
         prevIndex === taglines.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Adjust time interval as needed
+    }, 3000); 
 
-    return () => clearInterval(interval); // Clean up the interval on component unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
-    <div className="container w-full h-28 mt-6 p-4 md:px-6">
+    <div className="w-full h-28 mt-4 p-4 md:px-6">
       <div className="w-full md:flex md:justify-center my-4">
         {/* Animated Tagline */}
         <motion.h2
           key={currentTaglineIndex}
           className="text-center md:text-2xl md:w-1/2 md:px-0 px-8"
-          initial={{ opacity: 0, y: 20 }} // Start below with opacity 0
-          animate={{ opacity: 1, y: 0 }} // Fade in and slide up
-          exit={{ opacity: 0, y: 20 }} // Fade out and slide up
-          transition={{ duration: 1 }} // Animation duration
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          exit={{ opacity: 0, y: 20 }} 
+          transition={{ duration: 1 }} 
         >
           {taglines[currentTaglineIndex]}
         </motion.h2>

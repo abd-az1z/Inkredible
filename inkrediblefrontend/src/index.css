@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importing the custom font */
-@font-face {
-  font-family: 'Maisonfont'; /* Replace with your actual font name */
-  src: url('/src/assets/fonts/FontsFree-Net-Maison-Neue-Book.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Applying the custom font globally */
+/* Applying the Roboto font globally */
 body {
-  font-family: 'Maisonfont', sans-serif; /* Apply the custom font directly */
+  font-family: 'Roboto', sans-serif;
 }
 
+/* Smooth scrolling */
 html {
   @apply scroll-smooth;
 }

@@ -1,24 +1,36 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import HomePage from "./components/pages/HomePage";
-import Navbar from "./components/common/Navbar";
+import MenCategory from "./components/pages/MenCategory";
+import WomenCategory from "./components/pages/WomenCategory";
+import KidsCategory from "./components/pages/KidsCategory";
+import SaleCategory from "./components/pages/SaleCategory";
+import UnisexCategory from "./components/pages/UnisexCategory";
+import CartPage from "./components/pages/CartPage";
+import CheckoutPage from "./components/pages/CheckoutPage";
 import ProductPage from "./components/pages/ProductPage";
-import ProductList from "./components/products/ProductList";
-import ProductCard from "./components/products/ProductCard";
-import Reviews from "./components/common/Reviews";
-import Tagline from "./components/common/Tagline";
-import Footer from "./components/common/Footer";
 
 const App = () => {
   return (
-    <div className="w-full h-screen bg-white">
-      <Navbar/>
-      <div className="border-b-[1px]"></div>
-      <HomePage/>
-      <Tagline/>
-      <ProductList/>
-      <Reviews/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="w-full h-screen bg-white font-maison ">
+        
+        {/* Define all routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} /> {/* Homepage */}
+          <Route path="/men" element={<MenCategory />} /> {/* Men's T-shirts */}
+          <Route path="/women" element={<WomenCategory />} /> {/* Women's T-shirts */}
+          <Route path="/kids" element={<KidsCategory />} /> {/* Kids' T-shirts */}
+          <Route path="/sale" element={<SaleCategory />} /> {/* Sale T-shirts */}
+          <Route path="/unisex" element={<UnisexCategory />} /> {/* Unisex T-shirts */}
+          <Route path="/cart" element={<CartPage />} /> {/* Cart page */}
+          <Route path="/checkout" element={<CheckoutPage />} /> {/* Checkout page */}
+          <Route path="/product/:productId" element={<ProductPage />} /> {/* Dynamic product page */}
+        </Routes>
+        
+      </div>
+    </Router>
   );
 };
 
