@@ -1,0 +1,458 @@
+[
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/s/e/j/s-dhneck-02-unicus-apparel-original-imagtryyecstcsdg.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 1",
+        "discountedPrice": 31,
+        "price": 34,
+        "discountPersent": 5.88,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 25
+            },
+            {
+                "name": "M",
+                "quantity": 38
+            },
+            {
+                "name": "L",
+                "quantity": 48
+            }
+        ],
+        "quantity": 95,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 1, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/j/n/l/s-prnt-165a-glito-original-imah4yhhygggnasf.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 2",
+        "discountedPrice": 35,
+        "price": 37,
+        "discountPersent": 10.81,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 31
+            },
+            {
+                "name": "M",
+                "quantity": 19
+            },
+            {
+                "name": "L",
+                "quantity": 28
+            }
+        ],
+        "quantity": 186,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 2, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/b/z/5/l-pista-hand-magpy-original-imah4dddyrhfrhff.jpeg?q=70&crop=false",
+        "title": "Stylish Men's T-Shirt 3",
+        "discountedPrice": 18,
+        "price": 20,
+        "discountPersent": 25.0,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 50
+            },
+            {
+                "name": "M",
+                "quantity": 29
+            },
+            {
+                "name": "L",
+                "quantity": 12
+            }
+        ],
+        "quantity": 113,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 3, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/f/o/xxl-tblrnful-d158-tripr-original-imah545thkfje4sm.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 4",
+        "discountedPrice": 15,
+        "price": 17,
+        "discountPersent": 29.41,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 28
+            },
+            {
+                "name": "M",
+                "quantity": 32
+            },
+            {
+                "name": "L",
+                "quantity": 42
+            }
+        ],
+        "quantity": 106,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 4, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/j/p/v/l-os-100-vdorgnl-nvy-veirdo-original-imah256cvtzjwn5r.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 5",
+        "discountedPrice": 5,
+        "price": 10,
+        "discountPersent": 20.0,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 38
+            },
+            {
+                "name": "M",
+                "quantity": 28
+            },
+            {
+                "name": "L",
+                "quantity": 13
+            }
+        ],
+        "quantity": 96,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 5, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/j/x/xxl-p612-technosport-original-imagpy5b4jzge834.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 6",
+        "discountedPrice": 10,
+        "price": 14,
+        "discountPersent": 28.57,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 16
+            },
+            {
+                "name": "L",
+                "quantity": 15
+            }
+        ],
+        "quantity": 147,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 6, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/h/y/d/xl-52-jando-wight-magneto-original-imagz28p77tzkm8v.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 7",
+        "discountedPrice": 17,
+        "price": 20,
+        "discountPersent": 25.0,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 26
+            },
+            {
+                "name": "M",
+                "quantity": 47
+            },
+            {
+                "name": "L",
+                "quantity": 39
+            }
+        ],
+        "quantity": 115,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 7, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/5/i/e/l-fs49-blk-over-trond-original-imah29p8mhhgff4h.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 8",
+        "discountedPrice": 47,
+        "price": 49,
+        "discountPersent": 8.16,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 50
+            },
+            {
+                "name": "M",
+                "quantity": 12
+            },
+            {
+                "name": "L",
+                "quantity": 28
+            }
+        ],
+        "quantity": 142,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 8, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/e/a/xl-jc23-rn-hs-burgundy-staunch-jump-cuts-original-imagyq5zyhhbfe6f.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 9",
+        "discountedPrice": 43,
+        "price": 46,
+        "discountPersent": 8.7,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 28
+            },
+            {
+                "name": "M",
+                "quantity": 21
+            },
+            {
+                "name": "L",
+                "quantity": 16
+            }
+        ],
+        "quantity": 83,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 9, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/2/m/n/-original-imagydw4jqjd5mze.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 10",
+        "discountedPrice": 10,
+        "price": 13,
+        "discountPersent": 38.46,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 11
+            },
+            {
+                "name": "M",
+                "quantity": 26
+            },
+            {
+                "name": "L",
+                "quantity": 33
+            }
+        ],
+        "quantity": 134,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 10, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/w/b/b/-original-imagyh6fr4qahggz.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 11",
+        "discountedPrice": 27,
+        "price": 31,
+        "discountPersent": 6.45,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 44
+            },
+            {
+                "name": "M",
+                "quantity": 39
+            },
+            {
+                "name": "L",
+                "quantity": 20
+            }
+        ],
+        "quantity": 98,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 11, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/b/p/e/m-jc23-rn-hs-black-blade-jump-cuts-original-imagwccdff8hdyca.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 12",
+        "discountedPrice": 13,
+        "price": 16,
+        "discountPersent": 18.75,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 46
+            },
+            {
+                "name": "M",
+                "quantity": 42
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 165,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 12, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/8/u/f/xxl-mlm-arn-black-53-manlino-original-imagsrh5kggr2pc9.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 13",
+        "discountedPrice": 46,
+        "price": 48,
+        "discountPersent": 10.42,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 14
+            },
+            {
+                "name": "M",
+                "quantity": 32
+            },
+            {
+                "name": "L",
+                "quantity": 32
+            }
+        ],
+        "quantity": 76,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 13, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/l48s9zk0/t-shirt/x/w/i/l-ds2stripe-bluew-lauren-adams-original-imagf6ufy6nmcyhq.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 14",
+        "discountedPrice": 19,
+        "price": 21,
+        "discountPersent": 14.29,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 31
+            },
+            {
+                "name": "M",
+                "quantity": 45
+            },
+            {
+                "name": "L",
+                "quantity": 31
+            }
+        ],
+        "quantity": 59,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 14, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/e/m/m-fmt241-pogo-pk-force-original-imah5fs5zzphdwst.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 15",
+        "discountedPrice": 20,
+        "price": 24,
+        "discountPersent": 12.5,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 31
+            },
+            {
+                "name": "M",
+                "quantity": 23
+            },
+            {
+                "name": "L",
+                "quantity": 28
+            }
+        ],
+        "quantity": 180,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 15, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/0/z/f/xxl-0-2-hk-creation-original-imagmh3rn7cgvdzv.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 16",
+        "discountedPrice": 45,
+        "price": 49,
+        "discountPersent": 6.12,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 48
+            },
+            {
+                "name": "M",
+                "quantity": 14
+            },
+            {
+                "name": "L",
+                "quantity": 46
+            }
+        ],
+        "quantity": 58,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 16, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/t/l/n/s-ustsh2236-u-s-polo-assn-original-imah5y28nyfagrj4.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 17",
+        "discountedPrice": 20,
+        "price": 24,
+        "discountPersent": 12.5,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 47
+            },
+            {
+                "name": "M",
+                "quantity": 28
+            },
+            {
+                "name": "L",
+                "quantity": 17
+            }
+        ],
+        "quantity": 84,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 17, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/9/v/m-177817701-jack-jones-original-imahy9c9w6jzhdmg.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 18",
+        "discountedPrice": 37,
+        "price": 40,
+        "discountPersent": 5.0,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 40
+            },
+            {
+                "name": "M",
+                "quantity": 33
+            },
+            {
+                "name": "L",
+                "quantity": 39
+            }
+        ],
+        "quantity": 164,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 18, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/u/p/f/-original-imagsqqnqgthhyqz.jpeg?q=70",
+        "title": "Stylish Men's T-Shirt 19",
+        "discountedPrice": 10,
+        "price": 13,
+        "discountPersent": 15.38,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 48
+            },
+            {
+                "name": "L",
+                "quantity": 22
+            }
+        ],
+        "quantity": 190,
+        "Category": "Men",
+        "description": "This is a high-quality Men's T-Shirt 19, perfect for casual wear."
+    }
+]

@@ -1,0 +1,131 @@
+1. CardServices.js
+
+Assumptions:
+	•	This service manages a user’s cart, including adding, updating, and removing items.
+	•	Assumes each user has a unique cart associated with their user ID.
+	•	Assumes products in the cart are referenced by their product ID and contain details like quantity, price, and optional customizations.
+
+Functions:
+	•	findUserCart(userId): Retrieves the current cart for a user based on userId.
+	•	Explanation: Finds and returns all items currently in the user’s cart.
+	•	Assumption: Assumes a cart exists for every user and contains at least metadata or an empty item list.
+	•	addCartItem(userId, productData): Adds an item to the user’s cart.
+	•	Explanation: Adds a new product or increases the quantity if the product is already in the cart.
+	•	Assumption: Assumes productData includes required fields like product ID, quantity, and any necessary customizations (e.g., size).
+	•	updateCartItem(userId, cartItemId, updateData): Updates details of an existing cart item.
+	•	Explanation: Modifies quantity or customization details of an item in the cart.
+	•	Assumption: Assumes cartItemId is valid and updateData includes valid fields (e.g., new quantity).
+	•	removeCartItem(userId, cartItemId): Removes an item from the user’s cart.
+	•	Explanation: Deletes a specific item from the user’s cart based on cartItemId.
+	•	Assumption: Assumes the cartItemId exists in the user’s cart.
+
+2. CardItemServices.js
+
+Assumptions:
+	•	This service operates on individual cart items, handling functions related to adding or updating items within a cart.
+	•	Assumes cart items are linked to a specific cart and product, enabling item-specific actions.
+
+Functions:
+	•	addItem(cartId, productId, quantity): Adds a specific item to a cart.
+	•	Explanation: Adds a single product to the specified cart, setting an initial quantity.
+	•	Assumption: Assumes cartId and productId are valid and quantity is a positive integer.
+	•	updateItemQuantity(cartItemId, quantity): Updates the quantity of a specific item in a cart.
+	•	Explanation: Modifies the quantity of an item within a cart.
+	•	Assumption: Assumes cartItemId is valid and quantity adjustments are within acceptable limits.
+	•	deleteItem(cartItemId): Removes a specific item from the cart.
+	•	Explanation: Deletes a cart item based on its ID.
+	•	Assumption: Assumes the cartItemId exists in the cart.
+
+3. OrderServices.js
+
+Assumptions:
+	•	Manages user orders, including creation, status updates, and retrieval of order history.
+	•	Assumes each order is uniquely identified by an order ID and linked to a specific user.
+
+Functions:
+	•	createOrder(user, orderData): Creates a new order for the user.
+	•	Explanation: Initiates an order with items, shipping details, and payment information.
+	•	Assumption: Assumes orderData includes necessary fields like products, quantities, and address.
+	•	findOrderById(orderId): Retrieves details of a specific order.
+	•	Explanation: Finds an order by its ID, returning full details including items and shipping status.
+	•	Assumption: Assumes orderId is valid and associated with the current user.
+	•	updateOrderStatus(orderId, status): Updates the status of an existing order.
+	•	Explanation: Changes the status (e.g., Placed, Shipped, Delivered) of an order.
+	•	Assumption: Assumes orderId exists and status is a recognized order status.
+	•	getOrderHistory(userId): Retrieves all past orders for a specific user.
+	•	Explanation: Returns a list of orders associated with the user.
+	•	Assumption: Assumes userId is valid and the user has placed at least one order.
+
+4. ProductServices.js
+
+Assumptions:
+	•	Handles creation, updating, retrieval, and deletion of products in the catalog.
+	•	Assumes products are categorized and have fields like price, stock, and possibly discounts.
+
+Functions:
+	•	createProduct(productData): Creates a new product in the catalog.
+	•	Explanation: Adds a new product with details like title, description, price, and stock.
+	•	Assumption: Assumes productData includes all required fields and is properly formatted.
+	•	deleteProduct(productId): Deletes a specific product from the catalog.
+	•	Explanation: Removes a product by its ID.
+	•	Assumption: Assumes productId is valid and the product can be safely deleted.
+	•	updateProduct(productId, updateData): Updates product details.
+	•	Explanation: Modifies fields of an existing product (e.g., price, stock).
+	•	Assumption: Assumes updateData contains valid fields and productId is valid.
+	•	getProductById(productId): Retrieves a single product by ID.
+	•	Explanation: Returns detailed information about a specific product.
+	•	Assumption: Assumes productId is valid and exists in the catalog.
+
+5. RatingServices.js
+
+Assumptions:
+	•	Manages product ratings, enabling users to rate products.
+	•	Assumes each rating is associated with a specific product and user.
+
+Functions:
+	•	addRating(productId, userId, ratingData): Adds a new rating for a product.
+	•	Explanation: Allows a user to rate a product, possibly including a comment.
+	•	Assumption: Assumes productId and userId are valid and ratingData includes a numeric rating.
+	•	updateRating(ratingId, updateData): Updates an existing rating.
+	•	Explanation: Modifies an existing rating or comment.
+	•	Assumption: Assumes ratingId is valid and belongs to the user making the request.
+	•	getRatingsForProduct(productId): Retrieves all ratings for a specific product.
+	•	Explanation: Returns a list of all ratings for a given product.
+	•	Assumption: Assumes productId is valid and has been rated by at least one user.
+
+6. ReviewServices.js
+
+Assumptions:
+	•	Manages user reviews on products, allowing users to leave feedback.
+	•	Each review is linked to a specific product and user.
+
+Functions:
+	•	addReview(productId, userId, reviewData): Adds a new review for a product.
+	•	Explanation: Allows a user to review a product, possibly with a comment.
+	•	Assumption: Assumes productId and userId are valid, and reviewData includes text.
+	•	updateReview(reviewId, updateData): Updates an existing review.
+	•	Explanation: Modifies an existing review’s content or rating.
+	•	Assumption: Assumes reviewId exists and belongs to the user making the request.
+	•	getReviewsForProduct(productId): Retrieves all reviews for a product.
+	•	Explanation: Returns a list of all reviews for a specific product.
+	•	Assumption: Assumes productId is valid and has at least one review.
+
+7. UserServices.js
+
+Assumptions:
+	•	Manages user data, including registration, authentication, and profile updates.
+	•	Assumes each user is uniquely identified by their user ID.
+
+Functions:
+	•	createUser(userData): Registers a new user in the system.
+	•	Explanation: Adds a new user with fields like email, password, and profile details.
+	•	Assumption: Assumes userData includes required fields (e.g., email, password) and is unique.
+	•	findUserById(userId): Finds a user by their ID.
+	•	Explanation: Retrieves user details for a specific user ID.
+	•	Assumption: Assumes userId is valid and exists in the system.
+	•	updateUser(userId, updateData): Updates a user’s profile information.
+	•	Explanation: Modifies fields in a user’s profile (e.g., address, contact information).
+	•	Assumption: Assumes userId is valid and updateData contains valid fields.
+	•	deleteUser(userId): Deletes a user from the system.
+	•	Explanation: Removes a user account permanently.
+	•	Assumption: Assumes userId is valid and the user can be deleted.

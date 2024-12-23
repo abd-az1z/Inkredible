@@ -1,0 +1,112 @@
+1. Cart Routes (cart.routes.js)
+
+	•	GET / - Retrieves the authenticated user’s cart.
+	•	Purpose: Fetch and return the cart details for the authenticated user.
+	•	Assumptions: User is authenticated, and req.user contains necessary user data.
+	•	Middleware: authenticate
+	•	PUT /add - Adds an item to the authenticated user’s cart.
+	•	Purpose: Adds a specified item to the user’s cart.
+	•	Assumptions: User is authenticated; req.body contains product data.
+	•	Middleware: authenticate
+
+2. Cart Item Routes (cartItem.routes.js)
+
+	•	PUT /:id - Updates a specific item in the user’s cart.
+	•	Purpose: Modifies quantity or details of a cart item.
+	•	Assumptions: User is authenticated; req.params.id specifies the cart item.
+	•	Middleware: authenticate
+	•	DELETE /:id - Removes a specific item from the user’s cart.
+	•	Purpose: Deletes a cart item by its ID.
+	•	Assumptions: User is authenticated; req.params.id specifies the cart item.
+	•	Middleware: authenticate
+
+3. Order Routes (order.routes.js)
+
+	•	POST / - Creates a new order for the authenticated user.
+	•	Purpose: Initiates a new order based on the items in the user’s cart.
+	•	Assumptions: User is authenticated; req.body contains order details.
+	•	Middleware: authenticate
+	•	GET /user - Retrieves the order history for the authenticated user.
+	•	Purpose: Fetches all past orders associated with the user.
+	•	Assumptions: User is authenticated.
+	•	Middleware: authenticate
+	•	GET /:id - Retrieves details of a specific order by ID.
+	•	Purpose: Returns order details for the specified ID.
+	•	Assumptions: User is authenticated; req.params.id specifies the order.
+	•	Middleware: authenticate
+
+4. Product Routes (Modification and Creation) (product.routes.js)
+
+	•	POST / - Creates a new product.
+	•	Purpose: Adds a new product to the catalog.
+	•	Assumptions: req.body contains all required fields for the product.
+	•	POST /creates - Creates multiple products at once.
+	•	Purpose: Adds multiple products in a single request.
+	•	Assumptions: req.body contains an array of product data.
+	•	DELETE /:id - Deletes a product by its ID.
+	•	Purpose: Removes a product from the catalog.
+	•	Assumptions: req.params.id specifies a valid product ID.
+	•	PUT /:id - Updates a product by its ID.
+	•	Purpose: Modifies details of an existing product.
+	•	Assumptions: req.params.id specifies the product; req.body includes fields to update.
+
+5. Product Routes (Retrieval) (productRetrieval.routes.js)
+
+	•	GET / - Retrieves all products with optional filtering and pagination.
+	•	Purpose: Returns a list of products, with optional filters applied.
+	•	Assumptions: Query parameters can include filters (e.g., category, minPrice).
+	•	GET /id/:id - Retrieves a specific product by ID.
+	•	Purpose: Returns details of a product based on its unique ID.
+	•	Assumptions: req.params.id specifies a valid product ID.
+	•	GET /search - Searches for products based on a query string.
+	•	Purpose: Finds products that match the search query.
+	•	Assumptions: req.query.query contains a valid search term.
+
+6. Review Routes (review.routes.js)
+
+	•	POST /create - Creates a new review for a product.
+	•	Purpose: Adds a new review for a product.
+	•	Assumptions: User is authenticated; req.body includes productId, rating, and review text.
+	•	Middleware: authenticate
+	•	GET /product/:productId - Retrieves all reviews for a specific product.
+	•	Purpose: Returns all reviews associated with a product.
+	•	Assumptions: User is authenticated; req.params.productId specifies the product.
+	•	Middleware: authenticate
+
+7. Rating Routes (rating.routes.js)
+
+	•	POST /create - Creates a new rating for a product.
+	•	Purpose: Adds a new rating for a product.
+	•	Assumptions: User is authenticated; req.body includes productId and a numeric rating value.
+	•	Middleware: authenticate
+	•	GET /product/:productId - Retrieves all ratings for a specific product.
+	•	Purpose: Fetches all ratings associated with the specified product.
+	•	Assumptions: User is authenticated; req.params.productId specifies the product.
+	•	Middleware: authenticate
+
+8. Admin Order Routes (adminOrder.routes.js)
+
+	•	GET / - Retrieves all orders.
+	•	Purpose: Fetches all orders in the system.
+	•	Assumptions: User is authenticated as an admin.
+	•	Middleware: authenticate
+	•	PUT /:orderId/confirmed - Confirms an order by its ID.
+	•	Purpose: Updates the order status to “Confirmed.”
+	•	Assumptions: User is authenticated as an admin; req.params.orderId specifies the order.
+	•	Middleware: authenticate
+	•	PUT /:orderId/ship - Marks an order as “Shipped.”
+	•	Purpose: Updates the order status to “Shipped.”
+	•	Assumptions: User is authenticated as an admin; req.params.orderId specifies the order.
+	•	Middleware: authenticate
+	•	PUT /:orderId/deliver - Marks an order as “Delivered.”
+	•	Purpose: Updates the order status to “Delivered.”
+	•	Assumptions: User is authenticated as an admin; req.params.orderId specifies the order.
+	•	Middleware: authenticate
+	•	PUT /:orderId/cancel - Cancels an order.
+	•	Purpose: Updates the order status to “Cancelled.”
+	•	Assumptions: User is authenticated as an admin; req.params.orderId specifies the order.
+	•	Middleware: authenticate
+	•	DELETE /:orderId/delete - Deletes an order by its ID.
+	•	Purpose: Removes an order from the system.
+	•	Assumptions: User is authenticated as an admin; req.params.orderId specifies the order.
+	•	Middleware: authenticate

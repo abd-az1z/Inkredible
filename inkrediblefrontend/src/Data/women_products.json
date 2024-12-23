@@ -1,0 +1,121 @@
+
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/b/t/xl-grl-fs49-orng-groovy-c1-leotude-original-imagptvehgu7yjye.jpeg?q=70",
+        "title": "Elegant Women's T-Shirt 1",
+        "discountedPrice": 25,
+        "price": 30,
+        "discountPersent": 16.67,
+        "sizes": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 25
+            },
+            {
+                "name": "L",
+                "quantity": 30
+            }
+        ],
+        "quantity": 75,
+        "category": "Women",
+        "description": "Beautifully designed Women's T-Shirt 1, perfect for casual wear."
+    },
+    {
+        "imageUrl": "https://www.flipkart.com/juneberry-printed-typography-women-round-neck-white-t-shirt/p/itm32640db4bf88b?pid=TSHGTNXXEF6ZEHGW&lid=LSTTSHGTNXXEF6ZEHGWGW22RQ&marketplace=FLIPKART&q=women+tshirt&store=clo%2Fash%2Fank%2Floi&srno=s_1_38&otracker=search&otracker1=search&fm=Search&iid=en_cJkLuM93wouehtQ9tqLYEuhKd1K5m3WbZGJ8O3WBCW1qb0GL9S0akE68k7oWF2Yv5XQi9Y2-G0-1cASaGeERdw%3D%3D&ppt=sp&ppn=sp&ssid=7aevzs10ls0000001732475565958&qH=5836885295cf8224",
+        "title": "Elegant Women's T-Shirt 2",
+        "discountedPrice": 18,
+        "price": 22,
+        "discountPersent": 18.18,
+        "sizes": [
+            {
+                "name": "S",
+                "quantity": 15
+            },
+            {
+                "name": "M",
+                "quantity": 20
+            },
+            {
+                "name": "L",
+                "quantity": 25
+            }
+        ],
+        "quantity": 60,
+        "category": "Women",
+        "description": "Beautifully designed Women's T-Shirt 2, perfect for any occasion."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/300/300/xif0q/t-shirt/0/r/z/xl-casual-shoulder-sleeve-solid-women-black-white-top-eleven-original-imagyhd7rezc7ks7.jpeg?q=90",
+        "title": "Elegant Women's T-Shirt 3",
+        "discountedPrice": 28,
+        "price": 35,
+        "discountPersent": 20.0,
+        "sizes": [
+            {
+                "name": "S",
+                "quantity": 18
+            },
+            {
+                "name": "M",
+                "quantity": 24
+            },
+            {
+                "name": "L",
+                "quantity": 30
+            }
+        ],
+        "quantity": 72,
+        "category": "Women",
+        "description": "Stylish and trendy Women's T-Shirt 3, great for casual wear."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/ktd9mkw0/t-shirt/w/c/g/m-ts0116-chimpaaanzee-original-imag6q9gsgy54c8w.jpeg?q=70",
+        "title": "Elegant Women's T-Shirt 4",
+        "discountedPrice": 22,
+        "price": 28,
+        "discountPersent": 21.43,
+        "sizes": [
+            {
+                "name": "S",
+                "quantity": 22
+            },
+            {
+                "name": "M",
+                "quantity": 28
+            },
+            {
+                "name": "L",
+                "quantity": 35
+            }
+        ],
+        "quantity": 85,
+        "category": "Women",
+        "description": "Elegant Women's T-Shirt 4, perfect for casual outings."
+    },
+    {
+        "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/o/o/u/m-cd-obsessed-b-calm-down-original-imahyajzmq2yujph.jpeg?q=70",
+        "title": "Elegant Women's T-Shirt 5",
+        "discountedPrice": 24,
+        "price": 30,
+        "discountPersent": 20.0,
+        "sizes": [
+            {
+                "name": "S",
+                "quantity": 15
+            },
+            {
+                "name": "M",
+                "quantity": 20
+            },
+            {
+                "name": "L",
+                "quantity": 25
+            }
+        ],
+        "quantity": 60,
+        "category": "Women",
+        "description": "Beautifully crafted Women's T-Shirt 5, ideal for daily wear."
+    }

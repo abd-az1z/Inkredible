@@ -1,59 +1,77 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useProductContext } from "../../context/ProductContext";
 import FilterBar from "../filters/Filterbar";
 import Footer from "../common/Footer";
 import ProductCard from "../products/ProductCard";
-
-const products = [
-  {
-    id: 1,
-    label: "NEW STYLE",
-    name: "Horizon Tweed Shacket",
-    price: "$164",
-    image:
-      "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
-    discount: "GET 20% OFF",
-  },
-  {
-    id: 2,
-    label: "PRE-ORDER",
-    name: "Alpha Vest",
-    price: "$164",
-    image:
-      "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
-    discount: null,
-  },
-  {
-    id: 3,
-    label: "NEW STYLE",
-    name: "Mogul Jacket",
-    price: "$174",
-    image:
-      "https://cdn.shopify.com/s/files/1/1368/3463/files/Stachehaus_E2_84_A2_Cuts_Fall24_LA-406_768x_crop_center@2x.progressive.jpg?v=1726605271",
-    discount: null,
-  },
-
-  // More products...
-];
+import Navbar from "../common/Navbar";
+import { useSelector } from "react-redux";
+import NoProductFound from "../common/NoProductFound";
 
 function UnisexCategory() {
+  const { products, loading, fetchByCategory } = useProductContext();
+  const filters = useSelector((state) => state.filter);
+
+  useEffect(() => {
+    fetchByCategory("Unisex"); // Fetch only unisex products on component load
+  }, [fetchByCategory]);
+
+  const filteredProducts = products
+    .filter((product) => product.category === "Unisex") // Only include products in the "Men" category
+    .filter((product) => {
+      if (
+        filters.sizes.length > 0 &&
+        !filters.sizes.some((size) => product.sizes.includes(size))
+      )
+        return false;
+
+      const [minPrice, maxPrice] = filters.priceRange;
+      if (
+        product.price < minPrice ||
+        (maxPrice !== Infinity && product.price > maxPrice)
+      )
+        return false;
+
+      if (filters.ratings && product.rating < Number(filters.ratings))
+        return false;
+
+      if (filters.sleeveLength && product.sleeveLength !== filters.sleeveLength)
+        return false;
+
+      return true;
+    });
+
+  if (loading) return <p>Loading...</p>;
+
   return (
-    <div className="w-full h-screen">
+    <div className="w-full min-h-screen">
       <Navbar />
       <div className="flex flex-col md:flex-row h-full">
         {/* Filter Sidebar */}
-        <div className="md:w-[18%] md:h-screen">
+        <div className="md:w-[15%] md:h-screen">
           <FilterBar />
         </div>
 
         {/* Products Grid */}
-        <div className="md:w-[82%] md:p-4 px-2">
-          <h1 className="text-3xl font-bold mb-6">Shop For Unisex</h1>
+        <div className="md:w-[85%] w-full md:m-4 overflow-hidden">
+          <h1 className="text-3xl px-2 font-bold mb-6">Shop For Unisex</h1>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-            {products.map((product) => (
-              <ProductCard key={product.id} {...product} />
-            ))}
-          </div>
+          {/* Conditional rendering for products or "No products available" message */}
+          {filteredProducts.length > 0 ? (
+            <div className="w-full md:mx-2 flex flex-wrap gap-5">
+              {filteredProducts.map((product) => (
+                <ProductCard
+                  key={product._id || product.id}
+                  name={product.name}
+                  price={product.price}
+                  image={`http://localhost:5001${product.image}`} // Adjust the URL path if needed
+                  discount={product.discount}
+                  {...product}
+                />
+              ))}
+            </div>
+          ) : (
+            <NoProductFound />
+          )}
         </div>
       </div>
 

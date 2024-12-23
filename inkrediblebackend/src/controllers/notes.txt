@@ -1,0 +1,129 @@
+1. CartController.js
+Assumptions:
+	•	Assumes each user has a unique cart associated with their user ID.
+	•	Assumes cart operations (add, update, remove) are specific to authenticated users.
+
+Functions:
+	•	findUserCart(req, res):
+	•	Explanation: Retrieves the current cart for the authenticated user.
+	•	Assumption: Assumes req.user contains valid user information and that the cart exists.
+	•	addItemToCart(req, res):
+	•	Explanation: Adds a product to the authenticated user’s cart.
+	•	Assumption: Assumes req.user and req.body contain the user ID and product data, respectively. Assumes quantity is a positive integer.
+	•	updateCartItem(req, res):
+	•	Explanation: Updates the quantity or details of a cart item for the authenticated user.
+	•	Assumption: Assumes req.params.id specifies a valid cart item, and req.user and req.body contain user information and update data, respectively.
+	•	removeCartItem(req, res):
+	•	Explanation: Removes an item from the authenticated user’s cart.
+	•	Assumption: Assumes req.params.id specifies a valid cart item and req.user is authenticated.
+
+2. CartItemController.js
+
+Assumptions:
+	•	Assumes each cart item is uniquely associated with a product in the user’s cart.
+	•	Assumes valid cartItemId is provided in each request requiring it.
+
+Functions:
+	•	updateCartItem(req, res):
+	•	Explanation: Updates the quantity of a specific item in the cart.
+	•	Assumption: Assumes req.params.id is a valid cart item ID and req.body includes the quantity or other update data.
+	•	removeCartItem(req, res):
+	•	Explanation: Removes a specific item from the cart based on cartItemId.
+	•	Assumption: Assumes req.params.id corresponds to a valid cart item.
+
+3. OrderController.js
+
+Assumptions:
+	•	Assumes each order is uniquely identified by an order ID.
+	•	Assumes users can only manage their orders (create, view, update).
+
+Functions:
+	•	createOrder(req, res):
+	•	Explanation: Creates a new order for the authenticated user, including items and shipping details.
+	•	Assumption: Assumes req.user contains user info and req.body includes order details such as products and address.
+	•	findOrderById(req, res):
+	•	Explanation: Retrieves order details based on the provided order ID.
+	•	Assumption: Assumes req.params.id is a valid order ID and belongs to the authenticated user.
+	•	orderHistory(req, res):
+	•	Explanation: Fetches all past orders for the authenticated user.
+	•	Assumption: Assumes req.user contains a valid user ID.
+
+4. ProductController.js
+
+Assumptions:
+	•	Assumes each product is uniquely identified by a product ID.
+	•	Assumes product data is well-structured, containing fields like price, stock, and category.
+
+Functions:
+	•	createProduct(req, res):
+	•	Explanation: Adds a new product to the catalog.
+	•	Assumption: Assumes req.body contains complete product data, including required fields like title, price, and category.
+	•	deleteProduct(req, res):
+	•	Explanation: Deletes a product by its ID.
+	•	Assumption: Assumes req.params.id corresponds to a valid product that can be deleted.
+	•	updateProduct(req, res):
+	•	Explanation: Updates details of an existing product.
+	•	Assumption: Assumes req.params.id is a valid product ID and req.body contains fields to update.
+	•	findProductById(req, res):
+	•	Explanation: Retrieves product details based on the product ID.
+	•	Assumption: Assumes req.params.id is a valid product ID.
+	•	findProductByCategory(req, res):
+	•	Explanation: Retrieves products based on a category name.
+	•	Assumption: Assumes req.params.category corresponds to an existing category.
+	•	searchProduct(req, res):
+	•	Explanation: Searches for products based on a query string.
+	•	Assumption: Assumes req.params.query contains a valid search term.
+	•	getAllProducts(req, res):
+	•	Explanation: Retrieves all products with optional filters and sorting.
+	•	Assumption: Assumes req.query includes valid filter parameters.
+	•	createMultipleProduct(req, res):
+	•	Explanation: Adds multiple products at once.
+	•	Assumption: Assumes req.body contains an array of product data objects.
+
+5. RatingController.js
+
+Assumptions:
+	•	Assumes each rating is uniquely associated with a product and a user.
+	•	Assumes ratings contain numeric values for scoring purposes.
+
+Functions:
+	•	createRating(req, res):
+	•	Explanation: Adds a rating for a product by the authenticated user.
+	•	Assumption: Assumes req.user contains user info, and req.body includes productId and rating score.
+	•	getProductsRating(req, res):
+	•	Explanation: Retrieves all ratings associated with a specific product.
+	•	Assumption: Assumes req.params.productId is valid and corresponds to an existing product.
+
+6. ReviewController.js
+
+Assumptions:
+	•	Assumes each review is uniquely associated with a product and a user.
+	•	Assumes reviews contain text content that users submit for products.
+
+Functions:
+	•	createReview(req, res):
+	•	Explanation: Adds a review for a product by the authenticated user.
+	•	Assumption: Assumes req.user contains user info, and req.body includes productId and review text.
+	•	getAllReview(req, res):
+	•	Explanation: Retrieves all reviews for a specific product.
+	•	Assumption: Assumes req.params.productId is valid and corresponds to an existing product.
+
+7. UserController.js
+
+Assumptions:
+	•	Assumes each user is uniquely identified by their user ID.
+	•	Assumes users can create, update, or delete their own profile and data.
+
+Functions:
+	•	createUser(req, res):
+	•	Explanation: Registers a new user with information in req.body.
+	•	Assumption: Assumes req.body includes all required fields like username, email, and password.
+	•	findUserById(req, res):
+	•	Explanation: Retrieves a user’s profile based on their user ID.
+	•	Assumption: Assumes req.params.id is a valid user ID.
+	•	updateUser(req, res):
+	•	Explanation: Updates a user’s profile information.
+	•	Assumption: Assumes req.user contains valid user data, and req.body includes fields to update.
+	•	deleteUser(req, res):
+	•	Explanation: Deletes a user profile from the system.
+	•	Assumption: Assumes req.params.id is a valid user ID and that the authenticated user is authorized to delete this profile.

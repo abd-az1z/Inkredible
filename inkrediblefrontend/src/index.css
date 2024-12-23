@@ -10,6 +10,7 @@ body {
 /* Smooth scrolling */
 html {
   @apply scroll-smooth;
+  background-color: #E5E0DA;
 }
 html {
   scroll-behavior: smooth;
